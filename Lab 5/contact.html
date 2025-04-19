@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - TRMS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-800 text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold">TRMS</a>
+      <div class="space-x-4">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="services.html" class="hover:underline">Services</a>
+        <a href="contact.html" class="underline">Contact</a>
+        <button id="themeToggle" class="ml-4 px-3 py-1 border border-white rounded hover:bg-white hover:text-gray-800 transition">Switch Theme</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-10 bg-white shadow">
+    <h1 class="text-3xl font-bold">Contact Us</h1>
+    <p class="text-gray-600 mt-2">We'd love to hear from you. Send us a message!</p>
+  </header>
+
+  <!-- Main Section -->
+  <main class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+    
+    <!-- Form -->
+    <form class="space-y-6">
+      <div>
+        <label for="nameInput" class="block font-medium">Full Name</label>
+        <input id="nameInput" name="name" type="text" required placeholder="Enter your full name"
+          class="w-full mt-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label for="email" class="block font-medium">Email address</label>
+        <input id="email" name="email" type="email" required placeholder="Enter your email"
+          class="w-full mt-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label for="subject" class="block font-medium">Subject</label>
+        <input id="subject" name="subject" type="text" required placeholder="Enter subject"
+          class="w-full mt-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label for="messageInput" class="block font-medium">Message</label>
+        <textarea id="messageInput" name="message" rows="5" required placeholder="Write your message"
+          class="w-full mt-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send Message</button>
+
+      <div id="response" class="hidden mt-4 text-green-600 font-semibold">
+        Message sent successfully!
+      </div>
+    </form>
+
+    <!-- Team and FAQs -->
+    <div>
+      <h2 class="text-xl font-bold mb-2">Our Team</h2>
+      <ul class="list-disc list-inside mb-6">
+        <li>Joseph Likando</li>
+        <li>Blessings Mambusha</li>
+      </ul>
+      <button id="loadUsersBtn" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-800 mb-8">Load Users</button>
+
+      <h2 class="text-xl font-bold mb-4">FAQs</h2>
+      <div class="space-y-4">
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="font-semibold cursor-pointer">What is this website about?</summary>
+          <p class="mt-2 text-gray-600">This is a demo project for learning web development.</p>
+        </details>
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="font-semibold cursor-pointer">How can I contact support?</summary>
+          <p class="mt-2 text-gray-600">You can use the contact form above to reach us directly.</p>
+        </details>
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="font-semibold cursor-pointer">Where is TRMS based?</summary>
+          <p class="mt-2 text-gray-600">TRMS is based in Zambia, serving citizens and businesses for tax services.</p>
+        </details>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
